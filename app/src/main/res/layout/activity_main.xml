@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1D202E"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="408dp"
-        android:layout_height="53dp"
+        android:id="@+id/GridBottom"
+        android:layout_width="389dp"
+        android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995">
+        app:layout_constraintVertical_bias="0.992">
 
         <Button
             android:id="@+id/BTN_new_exercise"
@@ -22,8 +24,126 @@
             android:layout_height="wrap_content"
             android:onClick="newExercise"
             android:text="New exercise"
-            app:backgroundTint="#3D1D77"
+            app:backgroundTint="#2F1263"
             app:layout_column="0"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="#232639"
+        app:layout_constraintBottom_toTopOf="@+id/Gridlayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/INP_DateToday2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/Gridlayout3"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="#232639"
+        app:layout_constraintBottom_toTopOf="@+id/GridLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/INP_DateToday3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout4"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="#232639"
+        app:layout_constraintBottom_toTopOf="@+id/GridLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/INP_DateToday4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout5"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="#232639"
+        app:layout_constraintBottom_toTopOf="@+id/GridBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/INP_DateToday5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="382dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="#232639"
+        app:layout_constraintBottom_toTopOf="@+id/GridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/INP_DateToday"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="1"
             app:layout_row="0" />
     </androidx.gridlayout.widget.GridLayout>
 
