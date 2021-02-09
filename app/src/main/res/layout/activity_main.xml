@@ -9,14 +9,14 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/GridBottom"
-        android:layout_width="389dp"
-        android:layout_height="52dp"
+        android:layout_width="382dp"
+        android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992">
+        app:layout_constraintVertical_bias="0.991">
 
         <Button
             android:id="@+id/BTN_new_exercise"
@@ -26,6 +26,16 @@
             android:text="New exercise"
             app:backgroundTint="#2F1263"
             app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/BTN_split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="splitPlans"
+            android:text="Split plans"
+            app:backgroundTint="#2F1263"
+            app:layout_column="2"
             app:layout_row="0" />
     </androidx.gridlayout.widget.GridLayout>
 
@@ -48,8 +58,22 @@
             android:inputType="date"
             android:textColor="#E1D4D4"
             android:textStyle="bold"
-            app:layout_column="1"
+            app:layout_column="2"
             app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/INP_DayOW2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="0" />
+
     </androidx.gridlayout.widget.GridLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -71,7 +95,20 @@
             android:inputType="date"
             android:textColor="#E1D4D4"
             android:textStyle="bold"
-            app:layout_column="1"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/INP_DayOW3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="0"
             app:layout_row="0" />
 
     </androidx.gridlayout.widget.GridLayout>
@@ -95,7 +132,20 @@
             android:inputType="date"
             android:textColor="#E1D4D4"
             android:textStyle="bold"
-            app:layout_column="1"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/INP_DayOW4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="0"
             app:layout_row="0" />
 
     </androidx.gridlayout.widget.GridLayout>
@@ -119,7 +169,20 @@
             android:inputType="date"
             android:textColor="#E1D4D4"
             android:textStyle="bold"
-            app:layout_column="1"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/INP_DayOW5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="0"
             app:layout_row="0" />
     </androidx.gridlayout.widget.GridLayout>
 
@@ -143,8 +206,22 @@
             android:inputType="date"
             android:textColor="#E1D4D4"
             android:textStyle="bold"
-            app:layout_column="1"
+            app:layout_column="2"
             app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/INP_DayOW"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date"
+            android:textColor="#E1D4D4"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="0" />
+
     </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
