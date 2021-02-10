@@ -59,7 +59,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="2"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginTop="1dp"/>
 
         <EditText
             android:id="@+id/INP_DayOW2"
@@ -72,7 +73,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginLeft="4dp"/>
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -109,7 +111,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginLeft="4dp"/>
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -146,7 +149,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginLeft="4dp"/>
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -183,7 +187,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginLeft="4dp"/>
     </androidx.gridlayout.widget.GridLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -194,7 +199,9 @@
         android:background="#232639"
         app:layout_constraintBottom_toTopOf="@+id/GridLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        
+        >
 
         <EditText
             android:id="@+id/INP_DateToday"
@@ -220,7 +227,8 @@
             android:textColor="#E1D4D4"
             android:textStyle="bold"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:layout_marginLeft="4dp"/>
 
     </androidx.gridlayout.widget.GridLayout>
 
