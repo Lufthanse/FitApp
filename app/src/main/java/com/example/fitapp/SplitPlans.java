@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -75,6 +77,11 @@ public class SplitPlans extends AppCompatActivity {
     public void removeItem(int position) {
         splitPlanItems.remove(position);
         mAdapter.notifyItemRemoved(position);
+    }
+
+    public void createSplitPlan(View view){
+        Intent intentNewSplitPlan = new Intent(this, NewSplitPlan.class);
+        startActivity(intentNewSplitPlan);
     }
 
 }
