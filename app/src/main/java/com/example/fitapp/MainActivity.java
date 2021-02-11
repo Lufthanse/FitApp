@@ -17,6 +17,7 @@ import java.util.Vector;
 public class MainActivity extends AppCompatActivity {
 
     // HaKi 07.02.2021 16:45 attribute area
+    // Hi Mario
     protected Vector<Exercise> exercises = new Vector<Exercise>();
     protected static final String EXERCISES = "com.example.fitapp.EXERCISES";
     protected EditText dateToday, dateToday2, dateToday3, dateToday4, dateToday5;
